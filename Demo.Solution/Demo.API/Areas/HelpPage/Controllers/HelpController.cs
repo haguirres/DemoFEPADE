@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using Demo.API.Areas.HelpPage.ModelDescriptions;
-using Demo.API.Areas.HelpPage.Models;
+using Demo.Api.Areas.HelpPage.ModelDescriptions;
+using Demo.Api.Areas.HelpPage.Models;
 
-namespace Demo.API.Areas.HelpPage.Controllers
+namespace Demo.Api.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

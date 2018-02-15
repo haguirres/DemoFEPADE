@@ -1,6 +1,6 @@
 using System;
 
-namespace Demo.API.Areas.HelpPage.ModelDescriptions
+namespace Demo.Api.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

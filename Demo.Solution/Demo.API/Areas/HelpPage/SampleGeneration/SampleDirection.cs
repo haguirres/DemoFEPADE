@@ -1,4 +1,4 @@
-namespace Demo.API.Areas.HelpPage
+namespace Demo.Api.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response
