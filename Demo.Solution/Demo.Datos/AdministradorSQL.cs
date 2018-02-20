@@ -22,7 +22,7 @@ namespace Demo.Datos
 
             using (var contexto = new AdventureWorksConnection())
             {
-                listaTransacciones = contexto.TransactionHistory.ToList();
+                listaTransacciones = contexto.TransactionHistory.Take(10).ToList();
             }
             return listaTransacciones;
         }

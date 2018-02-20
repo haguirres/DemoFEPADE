@@ -64,6 +64,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AdventureWorksModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="CustomClasses\DemoLog.cs" />
     <Compile Include="Employee.cs">
       <DependentUpon>AdventureWorksModel.tt</DependentUpon>
     </Compile>
