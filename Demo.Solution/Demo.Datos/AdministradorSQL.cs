@@ -1,9 +1,6 @@
 ﻿using Demo.Modelo;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Demo.Datos
 {
@@ -17,6 +14,17 @@ namespace Demo.Datos
                 listaEmpleados = contexto.Employee.ToList();
             }
             return listaEmpleados;
+        }
+
+        public List<TransactionHistory> ObtenerHistorial()
+        {
+            List<TransactionHistory> listaTransacciones = new List<TransactionHistory>();
+
+            using (var contexto = new AdventureWorksConnection())
+            {
+                listaTransacciones = contexto.TransactionHistory.ToList();
+            }
+            return listaTransacciones;
         }
     }
 }

@@ -14,15 +14,6 @@ namespace Demo.Modelo
     
     public partial class Employee
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employee()
-        {
-            this.EmployeeDepartmentHistory = new HashSet<EmployeeDepartmentHistory>();
-            this.EmployeePayHistory = new HashSet<EmployeePayHistory>();
-            this.JobCandidate = new HashSet<JobCandidate>();
-            this.PurchaseOrderHeader = new HashSet<PurchaseOrderHeader>();
-        }
-    
         public int BusinessEntityID { get; set; }
         public string NationalIDNumber { get; set; }
         public string LoginID { get; set; }
@@ -38,16 +29,5 @@ namespace Demo.Modelo
         public bool CurrentFlag { get; set; }
         public System.Guid rowguid { get; set; }
         public System.DateTime ModifiedDate { get; set; }
-    
-        public virtual Person Person { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<EmployeeDepartmentHistory> EmployeeDepartmentHistory { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<EmployeePayHistory> EmployeePayHistory { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<JobCandidate> JobCandidate { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PurchaseOrderHeader> PurchaseOrderHeader { get; set; }
-        public virtual SalesPerson SalesPerson { get; set; }
     }
 }
